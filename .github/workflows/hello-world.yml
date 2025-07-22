@@ -10,4 +10,4 @@ jobs: # All jobs
     steps: # All steps
       - name: check out repository code # Common Checkout Action - retrieves contents of repo to run scripts or other actions | Good for build/test tooling
         uses: actions/checkout@v4 # We use version 4 of the Checkout action | Found in Github Marketplace, uses most recent by default
-      - run : echo "$(cat hellow_world.txt)" # Bash script will print out what is written in hello_world.txt
+      - run : echo "$(cat hello_world.txt)" # Bash script will print out what is written in hello_world.txt
