@@ -1,0 +1,13 @@
+name: hi-there # Workflow name
+
+on: push # Trigger command
+
+jobs: # All jobs
+  hello-world-job: # Specific job's name
+
+    runs-on: ubuntu-latest #Runner
+
+    steps: # All steps
+      - name: check out repository code # Common Checkout Action - retrieves contents of repo to run scripts or other actions | Good for build/test tooling
+        uses: actions/checkout@v4 # We use version 4 of the Checkout action | Found in Github Marketplace, uses most recent by default
+      - run : echo "$(cat hellow_world.txt)" # Bash script will print out what is written in hello_world.txt
